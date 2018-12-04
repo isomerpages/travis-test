@@ -1,0 +1,5 @@
+language: minimal
+branches:
+  only:
+  - master
+script: 'sleep 30 && curl "https://api.keycdn.com/zones/purge/112849.json" -u $KEYCDN_API_KEY:'
